@@ -68,7 +68,7 @@ class Widget extends React.Component {
                     <div className="col-lg-4 col-md-6 col-sm-12 p-4" key={i}>
                         <div className="card widget-card">
                             <div className={this.state.load}></div>
-                            <img className="card-img-top" src={process.env.PUBLIC_URL + "/images/" + item.item.condition.text + ".svg"} alt={"image-weather-"+item.item.condition.text}></img>
+                            <img className="card-img-top" src={process.env.PUBLIC_URL + "/images/" + item.item.condition.text.toLowerCase() + ".svg"} alt={"image-weather-"+item.item.condition.text}></img>
                             <div className="card-body text-center">
                                 <h3 className="card-title">{item.location.city} {item.item.condition.temp}&deg;C </h3>
                                 <p className="card-text">{item.item.condition.text}</p>
